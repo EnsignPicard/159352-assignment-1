@@ -1,0 +1,26 @@
+import flex
+
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#controls {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#form-container {
+  margin: 20px 0;
+}
+
+#results {
+  white-space: pre-wrap;
+  background: #f4f4f4;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
