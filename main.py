@@ -1,7 +1,5 @@
-import base64
 import os
 import secrets
-import shutil
 import httpx
 
 from typing import Annotated, Optional, List
@@ -31,9 +29,9 @@ def generate_profile(input_data: dict) -> dict:
 
     suitability = f"{name}, your passion for '{career}' suggests "
     if len(career) > 8:
-        suitability += "a detail-oriented mind — highly suited!"
+        suitability += "a detail-oriented mind"
     else:
-        suitability += "a bold, concise thinker — moderately suited."
+        suitability += "a creative person"
 
     if "dog" in pets:
         movie_query = "Lassie"
